@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Special One Lab — Andrea Saturnino</title>
-<meta name="description" content="Special One Lab — vetrina personale di Andrea Saturnino / Personal showcase of Andrea Saturnino.">
+<meta name="description" content="Andrea Saturnino — Consulenza IT & Privacy Specialist: risoluzione di problemi informatici, conformità GDPR / ruolo DPO e sviluppo di soluzioni software su misura.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f2a4a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23f2ede1' text-anchor='middle'%3ESO%3C/text%3E%3C/svg%3E">
 <style>
   :root{
@@ -16,7 +16,7 @@
     --line:#e4ded1;
     --muted:#5b6472;
     --accent:#b58a3d;
-    --maxw:920px;
+    --maxw:940px;
   }
   @media (prefers-color-scheme: dark){
     :root{
@@ -43,7 +43,6 @@
   a{color:var(--navy);text-decoration:none}
   a:hover{text-decoration:underline}
 
-  /* Header */
   header{
     position:sticky;top:0;z-index:10;
     background:color-mix(in srgb, var(--paper) 88%, transparent);
@@ -57,7 +56,7 @@
     background:var(--navy);color:var(--paper);
     font-family:Georgia,serif;font-size:19px;letter-spacing:.5px;
   }
-  nav ul{list-style:none;display:flex;gap:22px;align-items:center}
+  nav ul{list-style:none;display:flex;gap:20px;align-items:center}
   nav a{color:var(--muted);font-size:14px;letter-spacing:.3px}
   nav a:hover{color:var(--navy);text-decoration:none}
   .lang{
@@ -66,57 +65,52 @@
     padding:6px 12px;cursor:pointer;
   }
   .lang:hover{color:var(--navy);border-color:var(--navy)}
-  @media(max-width:620px){nav ul{gap:14px}nav .hide-sm{display:none}}
+  @media(max-width:640px){nav ul{gap:12px}nav .hide-sm{display:none}}
 
-  /* Hero */
-  .hero{padding:96px 0 72px;border-bottom:1px solid var(--line)}
+  .hero{padding:92px 0 68px;border-bottom:1px solid var(--line)}
   .eyebrow{
     text-transform:uppercase;letter-spacing:2.5px;font-size:12px;
     color:var(--accent);font-weight:700;margin-bottom:18px;
   }
   .hero h1{
-    font-size:clamp(34px,6vw,56px);line-height:1.1;
+    font-size:clamp(34px,6vw,54px);line-height:1.1;
     color:var(--navy-deep);font-weight:400;letter-spacing:-.5px;
   }
-  .hero .tag{font-size:clamp(17px,2.5vw,21px);color:var(--muted);margin-top:20px;max-width:34em}
-  .cta{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
-  .btn{
-    display:inline-block;padding:12px 22px;border-radius:8px;font-size:14px;
-    font-weight:600;letter-spacing:.3px;
-  }
+  .hero .tag{font-size:clamp(17px,2.5vw,21px);color:var(--muted);margin-top:20px;max-width:38em}
+  .cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:12px 22px;border-radius:8px;font-size:14px;font-weight:600;letter-spacing:.3px}
   .btn.primary{background:var(--navy);color:var(--paper)}
   .btn.primary:hover{background:var(--navy-deep);text-decoration:none}
   .btn.ghost{border:1px solid var(--line);color:var(--navy)}
   .btn.ghost:hover{border-color:var(--navy);text-decoration:none}
 
-  section{padding:72px 0;border-bottom:1px solid var(--line)}
-  .kicker{
-    text-transform:uppercase;letter-spacing:2px;font-size:12px;
-    color:var(--accent);font-weight:700;margin-bottom:14px;
-  }
-  h2.serif{font-size:clamp(24px,4vw,32px);color:var(--navy-deep);font-weight:400;margin-bottom:24px}
-  .about p+p{margin-top:16px}
-  .about .focus{margin-top:28px;display:grid;gap:10px}
-  .about .focus div{padding-left:20px;position:relative;color:var(--muted)}
-  .about .focus div::before{content:"—";position:absolute;left:0;color:var(--accent)}
+  section{padding:68px 0;border-bottom:1px solid var(--line)}
+  .kicker{text-transform:uppercase;letter-spacing:2px;font-size:12px;color:var(--accent);font-weight:700;margin-bottom:14px}
+  h2.serif{font-size:clamp(24px,4vw,32px);color:var(--navy-deep);font-weight:400;margin-bottom:22px}
+  h3.sub{font-family:Georgia,serif;font-weight:400;font-size:20px;color:var(--navy-deep);margin:36px 0 16px}
+  .lede p+p{margin-top:16px;color:var(--muted)}
+  .lede p:first-of-type{color:var(--ink)}
 
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
-  .card{
-    background:var(--card);border:1px solid var(--line);border-radius:12px;
-    padding:22px;display:flex;flex-direction:column;gap:10px;
-  }
+  .points{margin-top:26px;display:grid;gap:14px}
+  .points div{padding-left:22px;position:relative;color:var(--muted)}
+  .points div::before{content:"";position:absolute;left:0;top:.7em;width:9px;height:9px;border-radius:2px;background:var(--accent)}
+  .points b{color:var(--ink);font-weight:600}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:10px}
+  .card .n{font-family:Georgia,serif;font-size:14px;color:var(--accent);font-weight:700}
   .card h3{font-family:Georgia,serif;font-weight:400;font-size:19px;color:var(--navy-deep)}
-  .card p{font-size:14px;color:var(--muted);flex:1}
-  .card .meta{font-size:12px;letter-spacing:.5px;text-transform:uppercase;color:var(--accent);font-weight:700}
-  .card a.more{font-size:13px;font-weight:600}
+  .card p{font-size:14px;color:var(--muted)}
 
-  .contact .links{display:flex;flex-direction:column;gap:12px;margin-top:8px}
-  .contact .links a{font-size:16px}
+  .contact .box{
+    margin-top:26px;background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .contact .box a.mail{font-family:Georgia,serif;font-size:20px;color:var(--navy-deep)}
+  .contact .box .btn{white-space:nowrap}
 
-  footer{padding:40px 0;color:var(--muted);font-size:13px}
+  footer{padding:38px 0;color:var(--muted);font-size:13px}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-
-  [data-lang-hide]{display:none}
 </style>
 </head>
 <body>
@@ -126,9 +120,10 @@
     <a href="#top" class="mono" aria-label="Special One Lab">SO</a>
     <nav>
       <ul>
-        <li><a href="#about" data-i18n="nav_about">Profilo</a></li>
-        <li><a href="#projects" data-i18n="nav_projects">Progetti</a></li>
-        <li><a href="#contact" data-i18n="nav_contact">Contatti</a></li>
+        <li><a href="#chi-sono" data-i18n="nav_about">Profilo</a></li>
+        <li><a href="#competenze" data-i18n="nav_skills">Competenze</a></li>
+        <li class="hide-sm"><a href="#progetti" data-i18n="nav_projects">Progetti</a></li>
+        <li><a href="#contatti" data-i18n="nav_contact">Contatti</a></li>
         <li><button class="lang" id="langBtn" type="button">EN</button></li>
       </ul>
     </nav>
@@ -139,75 +134,76 @@
 
   <div class="hero">
     <div class="wrap">
-      <div class="eyebrow">Special One Lab</div>
-      <!-- EDIT: il tuo nome -->
+      <div class="eyebrow" data-i18n="hero_eyebrow">Consulenza IT &amp; Privacy Specialist</div>
       <h1 class="serif">Andrea Saturnino</h1>
-      <!-- EDIT: una riga che descrive chi sei / cosa fai -->
-      <p class="tag" data-i18n="hero_tag">Breve descrizione di chi sei e di cosa ti occupi. Sostituisci questo testo con la tua presentazione in una o due frasi.</p>
+      <p class="tag" data-i18n="hero_tag">Risoluzione di problemi informatici complessi, conformità GDPR e ruolo di DPO, sviluppo di soluzioni software su misura — con anni di esperienza sul campo.</p>
       <div class="cta">
-        <a href="#projects" class="btn primary" data-i18n="hero_cta1">Vedi i progetti</a>
-        <a href="#contact" class="btn ghost" data-i18n="hero_cta2">Contattami</a>
+        <a href="#competenze" class="btn primary" data-i18n="hero_cta1">Ambiti di competenza</a>
+        <a href="#contatti" class="btn ghost" data-i18n="hero_cta2">Lavoriamo insieme</a>
       </div>
     </div>
   </div>
 
-  <section id="about" class="about">
+  <section id="chi-sono" class="lede">
     <div class="wrap">
       <div class="kicker" data-i18n="about_kicker">Profilo</div>
-      <h2 class="serif" data-i18n="about_title">Chi sono</h2>
-      <!-- EDIT: 2-4 frasi di bio -->
-      <p data-i18n="about_p1">Paragrafo di presentazione. Racconta il tuo percorso, la tua esperienza e cosa ti appassiona. Questo è testo segnaposto da sostituire.</p>
-      <p data-i18n="about_p2">Secondo paragrafo opzionale: obiettivi, approccio al lavoro, ambiti in cui operi.</p>
-      <div class="focus">
-        <div data-i18n="about_f1">Ambito o competenza 1</div>
-        <div data-i18n="about_f2">Ambito o competenza 2</div>
-        <div data-i18n="about_f3">Ambito o competenza 3</div>
+      <h2 class="serif" data-i18n="about_title">Chi sono e cosa faccio</h2>
+      <p data-i18n="about_p1">Mi occupo di risolvere i problemi informatici e tecnologici a 360 gradi, affiancando aziende e professionisti con un approccio tempestivo ed efficace.</p>
+      <div class="points">
+        <div><b data-i18n="about_pt1_b">Diagnosi e soluzione rapida.</b> <span data-i18n="about_pt1_t">Interventi mirati per ripristinare la continuità operativa senza blocchi aziendali.</span></div>
+        <div><b data-i18n="about_pt2_b">Soluzioni integrali.</b> <span data-i18n="about_pt2_t">Gestione coordinata degli aspetti hardware, software e delle architetture di rete.</span></div>
+        <div><b data-i18n="about_pt3_b">Approccio su misura.</b> <span data-i18n="about_pt3_t">Nessun pacchetto standardizzato, ma risposte concrete modellate sulle reali esigenze.</span></div>
       </div>
     </div>
   </section>
 
-  <section id="projects">
+  <section id="competenze">
     <div class="wrap">
-      <div class="kicker" data-i18n="proj_kicker">Lavori</div>
-      <h2 class="serif" data-i18n="proj_title">Progetti selezionati</h2>
+      <div class="kicker" data-i18n="skills_kicker">Competenze</div>
+      <h2 class="serif" data-i18n="skills_title">Tre ambiti di competenza</h2>
       <div class="grid">
-
         <article class="card">
-          <span class="meta">2026</span>
-          <h3>Special One</h3>
-          <p data-i18n="proj1_desc">App personale multi-sezione: agenda con promemoria, allenamenti con grafici, diario e gestione progetti. Sviluppata e iterata come artifact privato.</p>
-          <span class="more" style="color:var(--muted);font-size:13px" data-i18n="proj1_link">Progetto privato</span>
+          <span class="n">01</span>
+          <h3 data-i18n="skill1_t">Informatica &amp; Troubleshooting</h3>
+          <p data-i18n="skill1_d">Risoluzione capillare di problematiche sistemistiche, manutenzione dell'infrastruttura, ottimizzazione delle prestazioni e sicurezza informatica aziendale.</p>
         </article>
-
         <article class="card">
-          <span class="meta" data-i18n="proj2_meta">Progetto</span>
-          <h3 data-i18n="proj2_title">Titolo progetto</h3>
-          <p data-i18n="proj2_desc">Descrizione breve del progetto: obiettivo, cosa hai fatto, risultato. Testo segnaposto.</p>
-          <a class="more" href="#" data-i18n="proj2_link">Scopri di più →</a>
+          <span class="n">02</span>
+          <h3 data-i18n="skill2_t">Privacy &amp; Ruolo DPO</h3>
+          <p data-i18n="skill2_d">Consulenza specialistica in ambito GDPR, adeguamento normativo sulla protezione dei dati, gestione di audit di sicurezza e incarichi ufficiali come Data Protection Officer.</p>
         </article>
-
         <article class="card">
-          <span class="meta" data-i18n="proj3_meta">Progetto</span>
-          <h3 data-i18n="proj3_title">Titolo progetto</h3>
-          <p data-i18n="proj3_desc">Descrizione breve del progetto: obiettivo, cosa hai fatto, risultato. Testo segnaposto.</p>
-          <a class="more" href="#" data-i18n="proj3_link">Scopri di più →</a>
+          <span class="n">03</span>
+          <h3 data-i18n="skill3_t">Sviluppo &amp; Progettazione</h3>
+          <p data-i18n="skill3_d">Ideazione e sviluppo di architetture dati, database relazionali e applicazioni su misura, strutturate sulle specifiche operative dell'organizzazione.</p>
         </article>
-
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="progetti" class="lede">
+    <div class="wrap">
+      <div class="kicker" data-i18n="proj_kicker">Progetti su misura</div>
+      <h2 class="serif" data-i18n="proj_title">Database, app e soluzioni software</h2>
+      <p data-i18n="proj_p1">Progetto e realizzo database performanti, applicazioni web e mobile e piattaforme gestionali ad hoc, in base alle precise necessità operative del cliente.</p>
+      <p data-i18n="proj_p2">Dalla fase di analisi dei requisiti fino alla messa in produzione, ogni progetto integra nativamente i criteri di sicurezza, scalabilità e rispetto della privacy (Privacy by Design).</p>
+
+      <h3 class="sub" data-i18n="method_title">Il mio metodo di lavoro</h3>
+      <div class="points">
+        <div><b data-i18n="method_pt1_b">Anni di esperienza sul campo.</b> <span data-i18n="method_pt1_t">Un bagaglio di competenze consolidato negli anni permette di individuare la radice dei problemi in tempi brevi, evitando sprechi di risorse e garantendo soluzioni stabili e durature.</span></div>
+        <div><b data-i18n="method_pt2_b">Visione integrata IT + Compliance.</b> <span data-i18n="method_pt2_t">Il vantaggio competitivo è unire la capacità tecnica di sviluppo e problem solving con il know-how normativo in materia di privacy e protezione dei dati.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contatti" class="contact">
     <div class="wrap">
       <div class="kicker" data-i18n="contact_kicker">Contatti</div>
-      <h2 class="serif" data-i18n="contact_title">Parliamone</h2>
-      <p data-i18n="contact_p">Per collaborazioni o informazioni, scrivimi.</p>
-      <div class="links">
-        <!-- EDIT: metti l'email pubblica che vuoi esporre -->
-        <a href="mailto:INDIRIZZO@EMAIL.COM">INDIRIZZO@EMAIL.COM</a>
-        <!-- EDIT o rimuovi -->
-        <a href="https://www.linkedin.com/in/PROFILO" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/UTENTE" target="_blank" rel="noopener">GitHub</a>
+      <h2 class="serif" data-i18n="contact_title">Lavoriamo insieme</h2>
+      <p style="color:var(--muted);max-width:34em" data-i18n="contact_p">Hai un problema informatico da risolvere o un nuovo progetto da sviluppare? Scrivimi, ne parliamo.</p>
+      <div class="box">
+        <a class="mail" href="mailto:andrea.saturnino72@gmail.com">andrea.saturnino72@gmail.com</a>
+        <a class="btn primary" href="mailto:andrea.saturnino72@gmail.com?subject=Richiesta%20consulenza%20IT%20%26%20Privacy" data-i18n="contact_btn">Scrivi una mail</a>
       </div>
     </div>
   </section>
@@ -216,52 +212,68 @@
 
 <footer>
   <div class="wrap">
-    <span>© <span id="year"></span> Andrea Saturnino — Special One Lab</span>
-    <span>specialonelab.com</span>
+    <span>© <span id="year"></span> Andrea Saturnino — <span data-i18n="footer_role">Consulenza IT &amp; Privacy</span></span>
+    <span>specialonelab.github.io</span>
   </div>
 </footer>
 
 <script>
   var I18N = {
     it: {
-      nav_about:"Profilo", nav_projects:"Progetti", nav_contact:"Contatti",
-      hero_tag:"Breve descrizione di chi sei e di cosa ti occupi. Sostituisci questo testo con la tua presentazione in una o due frasi.",
-      hero_cta1:"Vedi i progetti", hero_cta2:"Contattami",
-      about_kicker:"Profilo", about_title:"Chi sono",
-      about_p1:"Paragrafo di presentazione. Racconta il tuo percorso, la tua esperienza e cosa ti appassiona. Questo è testo segnaposto da sostituire.",
-      about_p2:"Secondo paragrafo opzionale: obiettivi, approccio al lavoro, ambiti in cui operi.",
-      about_f1:"Ambito o competenza 1", about_f2:"Ambito o competenza 2", about_f3:"Ambito o competenza 3",
-      proj_kicker:"Lavori", proj_title:"Progetti selezionati",
-      proj1_desc:"App personale multi-sezione: agenda con promemoria, allenamenti con grafici, diario e gestione progetti. Sviluppata e iterata come artifact privato.",
-      proj1_link:"Progetto privato",
-      proj2_meta:"Progetto", proj2_title:"Titolo progetto",
-      proj2_desc:"Descrizione breve del progetto: obiettivo, cosa hai fatto, risultato. Testo segnaposto.",
-      proj2_link:"Scopri di più →",
-      proj3_meta:"Progetto", proj3_title:"Titolo progetto",
-      proj3_desc:"Descrizione breve del progetto: obiettivo, cosa hai fatto, risultato. Testo segnaposto.",
-      proj3_link:"Scopri di più →",
-      contact_kicker:"Contatti", contact_title:"Parliamone",
-      contact_p:"Per collaborazioni o informazioni, scrivimi."
+      nav_about:"Profilo", nav_skills:"Competenze", nav_projects:"Progetti", nav_contact:"Contatti",
+      hero_eyebrow:"Consulenza IT & Privacy Specialist",
+      hero_tag:"Risoluzione di problemi informatici complessi, conformità GDPR e ruolo di DPO, sviluppo di soluzioni software su misura — con anni di esperienza sul campo.",
+      hero_cta1:"Ambiti di competenza", hero_cta2:"Lavoriamo insieme",
+      about_kicker:"Profilo", about_title:"Chi sono e cosa faccio",
+      about_p1:"Mi occupo di risolvere i problemi informatici e tecnologici a 360 gradi, affiancando aziende e professionisti con un approccio tempestivo ed efficace.",
+      about_pt1_b:"Diagnosi e soluzione rapida.", about_pt1_t:"Interventi mirati per ripristinare la continuità operativa senza blocchi aziendali.",
+      about_pt2_b:"Soluzioni integrali.", about_pt2_t:"Gestione coordinata degli aspetti hardware, software e delle architetture di rete.",
+      about_pt3_b:"Approccio su misura.", about_pt3_t:"Nessun pacchetto standardizzato, ma risposte concrete modellate sulle reali esigenze.",
+      skills_kicker:"Competenze", skills_title:"Tre ambiti di competenza",
+      skill1_t:"Informatica & Troubleshooting",
+      skill1_d:"Risoluzione capillare di problematiche sistemistiche, manutenzione dell'infrastruttura, ottimizzazione delle prestazioni e sicurezza informatica aziendale.",
+      skill2_t:"Privacy & Ruolo DPO",
+      skill2_d:"Consulenza specialistica in ambito GDPR, adeguamento normativo sulla protezione dei dati, gestione di audit di sicurezza e incarichi ufficiali come Data Protection Officer.",
+      skill3_t:"Sviluppo & Progettazione",
+      skill3_d:"Ideazione e sviluppo di architetture dati, database relazionali e applicazioni su misura, strutturate sulle specifiche operative dell'organizzazione.",
+      proj_kicker:"Progetti su misura", proj_title:"Database, app e soluzioni software",
+      proj_p1:"Progetto e realizzo database performanti, applicazioni web e mobile e piattaforme gestionali ad hoc, in base alle precise necessità operative del cliente.",
+      proj_p2:"Dalla fase di analisi dei requisiti fino alla messa in produzione, ogni progetto integra nativamente i criteri di sicurezza, scalabilità e rispetto della privacy (Privacy by Design).",
+      method_title:"Il mio metodo di lavoro",
+      method_pt1_b:"Anni di esperienza sul campo.", method_pt1_t:"Un bagaglio di competenze consolidato negli anni permette di individuare la radice dei problemi in tempi brevi, evitando sprechi di risorse e garantendo soluzioni stabili e durature.",
+      method_pt2_b:"Visione integrata IT + Compliance.", method_pt2_t:"Il vantaggio competitivo è unire la capacità tecnica di sviluppo e problem solving con il know-how normativo in materia di privacy e protezione dei dati.",
+      contact_kicker:"Contatti", contact_title:"Lavoriamo insieme",
+      contact_p:"Hai un problema informatico da risolvere o un nuovo progetto da sviluppare? Scrivimi, ne parliamo.",
+      contact_btn:"Scrivi una mail",
+      footer_role:"Consulenza IT & Privacy"
     },
     en: {
-      nav_about:"About", nav_projects:"Projects", nav_contact:"Contact",
-      hero_tag:"A short description of who you are and what you do. Replace this text with your one- or two-sentence introduction.",
-      hero_cta1:"View projects", hero_cta2:"Get in touch",
-      about_kicker:"About", about_title:"Who I am",
-      about_p1:"Introductory paragraph. Tell your story, your experience and what drives you. This is placeholder text to replace.",
-      about_p2:"Optional second paragraph: goals, how you work, the areas you focus on.",
-      about_f1:"Area or skill 1", about_f2:"Area or skill 2", about_f3:"Area or skill 3",
-      proj_kicker:"Work", proj_title:"Selected projects",
-      proj1_desc:"Personal multi-section app: agenda with reminders, workouts with charts, a diary and project tracking. Built and iterated as a private artifact.",
-      proj1_link:"Private project",
-      proj2_meta:"Project", proj2_title:"Project title",
-      proj2_desc:"Short project description: the goal, what you did, the outcome. Placeholder text.",
-      proj2_link:"Learn more →",
-      proj3_meta:"Project", proj3_title:"Project title",
-      proj3_desc:"Short project description: the goal, what you did, the outcome. Placeholder text.",
-      proj3_link:"Learn more →",
-      contact_kicker:"Contact", contact_title:"Let's talk",
-      contact_p:"For collaborations or enquiries, drop me a line."
+      nav_about:"Profile", nav_skills:"Expertise", nav_projects:"Projects", nav_contact:"Contact",
+      hero_eyebrow:"IT & Privacy Consulting Specialist",
+      hero_tag:"Solving complex IT problems, GDPR compliance and the DPO role, and building tailor-made software — with years of hands-on experience.",
+      hero_cta1:"Areas of expertise", hero_cta2:"Work with me",
+      about_kicker:"Profile", about_title:"Who I am and what I do",
+      about_p1:"I solve IT and technology problems end to end, supporting companies and professionals with a fast, effective approach.",
+      about_pt1_b:"Rapid diagnosis and resolution.", about_pt1_t:"Targeted action to restore operations with no business downtime.",
+      about_pt2_b:"Integrated solutions.", about_pt2_t:"Coordinated management of hardware, software and network architecture.",
+      about_pt3_b:"Tailored approach.", about_pt3_t:"No off-the-shelf packages — just concrete answers shaped around real needs.",
+      skills_kicker:"Expertise", skills_title:"Three areas of expertise",
+      skill1_t:"IT & Troubleshooting",
+      skill1_d:"Thorough resolution of systems issues, infrastructure maintenance, performance tuning and corporate IT security.",
+      skill2_t:"Privacy & DPO Role",
+      skill2_d:"Specialist GDPR consulting, data-protection compliance, security audits and official appointments as Data Protection Officer.",
+      skill3_t:"Development & Design",
+      skill3_d:"Design and development of data architectures, relational databases and custom applications built around the organisation's operational requirements.",
+      proj_kicker:"Custom projects", proj_title:"Databases, apps and software solutions",
+      proj_p1:"I design and build high-performance databases, web and mobile applications and bespoke management platforms, based on the client's precise operational needs.",
+      proj_p2:"From requirements analysis to production release, every project natively embeds security, scalability and privacy (Privacy by Design).",
+      method_title:"How I work",
+      method_pt1_b:"Years in the field.", method_pt1_t:"Consolidated experience makes it possible to pinpoint the root cause quickly, avoiding wasted resources and delivering stable, lasting solutions.",
+      method_pt2_b:"Integrated IT + compliance view.", method_pt2_t:"The competitive edge: combining technical development and problem-solving skills with regulatory know-how in privacy and data protection.",
+      contact_kicker:"Contact", contact_title:"Let's work together",
+      contact_p:"Have an IT problem to solve or a new project to build? Get in touch and let's talk.",
+      contact_btn:"Send an email",
+      footer_role:"IT & Privacy Consulting"
     }
   };
 
